@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+/* Style the header */
+.home-header {
+  grid-area: header;
+  color: #1fbc63;
+  font-weight: bold;
+  background-color: #000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "left middle middle middle middle right"
+    "footer footer footer footer footer footer";
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left,
+.middle,
+.right {
+  background-color: #fff;
+  padding: 10px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+  border: 1px solid rgb(8, 231, 116);
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color: #000;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  background-color: #000;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  background-color: #000;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #1fbc63;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 5px;
+  font-size: 16px;
+
+  cursor: pointer;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  background-color: #444;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      "header header header header header header"
+      "left left left left left left"
+      "middle middle middle middle middle middle"
+      "right right right right right right"
+      "footer footer footer footer footer footer";
+  }
+}

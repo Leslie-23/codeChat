@@ -1,0 +1,97 @@
+.login-page-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #04ca85e0;
+  border-radius: 5px;
+  background-color: #0e0c0c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.login-h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #04ca85e0;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.login-page-button {
+  width: 50%;
+  padding: 8px;
+  background-color: #04ca85e0;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-page-button:hover {
+  background-color: #00c117;
+}
+
+/* the css below will be a waste so the css for the login page was also used fir the signup page*/
+/*
+.signup-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #218838;
+} */
